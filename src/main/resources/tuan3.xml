@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="lop" class="org.example.models.Class_">
+        <property name="classId" value="DHKTPM16A"/>
+        <property name="className" value="Lớp 16A"/>
+    </bean>
+
+    <bean id="st1" class="org.example.models.Student">
+        <property name="id" value="001"/>
+        <property name="name" value="than thi det"/>
+        <property name="lophoc" ref="lop"/>
+    </bean>
+</beans>
